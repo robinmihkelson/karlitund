@@ -1,10 +1,17 @@
-<script setup>
-import Page1 from './components/Page1.vue'
-</script>
-
 <template>
-  <Page1/>
+  <RouterView></RouterView>
 </template>
+
+<script>
+import Page1 from './components/Page1.vue';
+
+export default {
+  name: 'App',
+  components: {
+    Page1, 
+  },
+};
+</script>
 
 <style scoped>
 .logo {
